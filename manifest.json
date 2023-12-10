@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "b站触屏优化",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "mrxzm",
 	"permissions": ["scripting", "activeTab", "storage"],
 	"description": "__MSG_pluginDesc__",
