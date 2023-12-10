@@ -1,8 +1,9 @@
 let TouchVideo = ()  => {
-    /////////// config /////////////
+    //////////////////////////      config           //////////////////////////
     const SENSITIVITY = 10; // 滑动检测灵敏度
     const MOUSE_SPEED_DIFFERENCE_MAX = 10; // 滑动检查速度误差最大值
     const MOUSE_DIFFERENCE_MAX = 15; // 滑动检查允许误差最大值
+    const IS_WIDESCREEN = true;  // 是否自动转宽屏播放
 
     ///////////////////////////////// MessageBox Content //////////////////////////////
     let videoContainer = document.querySelector("div.bpx-player-video-perch");

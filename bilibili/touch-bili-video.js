@@ -11,8 +11,17 @@ class BiliVideo extends Bili{
         let videoBtns = [
             "div.bpx-player-ctrl-wide" // 宽屏按钮
         ];
-        super.execute(videoBtns, super.btnClick);
+        let execute = super.execute;
+        let btnClick = super.btnClick;
+        // 执行宽屏点击
+        chrome.storage.local.get("widescreen", function(result) {
+            if (result.widescreen == "true"){
+                execute(videoBtns, btnClick);
+            }
+        });
         super.execute(bottomBtns, super.optimize);
     }
+
+    
 }
 window["touch-bili-video"] || (function () { window["touch-bili-video"] = true; new BiliVideo().init();})();

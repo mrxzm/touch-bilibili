@@ -3,7 +3,7 @@
 	"name": "b站触屏优化",
 	"version": "1.0.0",
 	"author": "mrxzm",
-	"permissions": ["scripting", "activeTab"],
+	"permissions": ["scripting", "activeTab", "storage"],
 	"description": "__MSG_pluginDesc__",
 	"default_locale": "zh_CN",
 	"icons": {
@@ -56,5 +56,10 @@
 			],
 			"run_at": "document_end"
 		}
-	]
+	],
+	"optional_permissions": ["tabs"],
+	"options_page": "options/options.html",
+	"options_ui": {
+	  "page": "options/options.html"
+	}
 }
